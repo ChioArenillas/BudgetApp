@@ -30,14 +30,31 @@
                     <div class="budget_expense--percentage" id="percentage">45%</div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <form id="forma" onsubmit="return false">
+        <div class="add">
+            <div class="add_container">
+                <input type="text" class="add_description" placeholder="Add Description" id="description" />
+                    <select class="add_type" id="type">
+                        <option value="income" selected>+</option>
+                        <option value="expense">-</option>
+                    </select>
+
+                    <input type="number" class="add_value" placeholder="Value" id="value" step="any" />
+                    <button class="add_btn" onclick="addData()">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </button>
+            </div>
+        </div>
+    </form>
+
     <div class="container clearStyles">
         <div class="income">
             <h2 class="income_title">Incomes</h2>
             <div id="incomes-list">
-<!--                 <div class="element clearStyles">
+                <!--                 <div class="element clearStyles">
                     <div class="element_description">Salary</div>
                     <div class="right clearStyles">
                         <div class="element_value">+ 2500</div>
@@ -63,10 +80,10 @@
 
             </div>
         </div>
-    <div class="expense">
-        <h2 class="expense_title">Expenses</h2>
-        <div id="expenses-list">
-<!--             <div class="element clearStyles">
+        <div class="expense">
+            <h2 class="expense_title">Expenses</h2>
+            <div id="expenses-list">
+                <!--             <div class="element clearStyles">
                 <div class="element_description">Home Rent</div>
                 <div class="right clearStyles">
                     <div class="element_value">- 500</div>
@@ -91,16 +108,16 @@
                 </div>
             </div> 
 -->
+            </div>
         </div>
-    </div>
     </div>
 
     <script src="js/Data.js"></script>
     <script src="js/Income.js"></script>
     <script src="js/Expense.js"></script>
     <script src="js/app.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

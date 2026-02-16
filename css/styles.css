@@ -141,7 +141,10 @@ body {
     transition: border 0.3s;
 }
 
-.add_description { width: 400px;}
+.add_description { 
+    width: 400px;
+    margin-bottom: 8px;
+}
 .add_value { width: 100px;}
 
 .add_btn {
@@ -265,6 +268,7 @@ h2 {
     gap: 40px;
     width: 100%;
 }
+
 .income {
     margin-right: 0;
     width: 90%;
@@ -273,6 +277,5 @@ h2 {
 .expense {
     width: 90%;
 }
-
     
 }

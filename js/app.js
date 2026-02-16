@@ -37,7 +37,7 @@ let loadHeader = () => {
 }
 
 const currencyFormat = (value) => {
-    return value.toLocaleString("en-US", { style: "currency", currency: "EUR", minimumFractionDigits: 2 })
+    return value.toLocaleString("es-ES", { style: "currency", currency: "EUR", minimumFractionDigits: 2 })
 }
 const percentageFormat = (value) => {
     return value.toLocaleString("en-US", { style: "percent", minimumFractionDigits: 2 })
@@ -116,4 +116,22 @@ const deleteExpense = (id) => {
 }
 
 
+let addData = () => {
+    let forma = document.forms['forma']
+    let type = forma['type']
+    let desctiption = forma['description']
+    let value = forma['value']
+    if (desctiption.value !== '' && value.value !== ''){
+        if (type.value === 'income'){
+            incomes.push(new Income(description.value, Number(value.value)))
+            loadHeader()
+            loadIncomes()
+        }
+        else if(type.value === 'expense'){
+            expenses.push(new Expense(description.value, Number(value.value)))
+            loadHeader()
+            loadExpenses()
 
+        }
+    }
+}
