@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="/public/13_BudgetApp/favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="loadApp()">
+    <div class="header">
+        <div class="budget">
+            <div class="budget_title">
+                Budget
+            </div>
+            <div class="budget_value" id="budget">+ 2000</div>
+            <div class="budget_income clearStyles">
+                <div class="budget_income--text">Incomes</div>
+                <div class="right">
+                    <div class="budget_income--value" id="incomes">+7548</div>
+                    <div class="budget_income--percentage">&nbsp;</div>
+                </div>
+            </div>
+            <div class="budget_expense clearStyles">
+                <div class="budget_expense--text">Expenses</div>
+                <div class="right clearStyles">
+                    <div class="budget_expense--value" id="expenses">-9765</div>
+                    <div class="budget_expense--percentage" id="percentage">45%</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container clearStyles">
+        <div class="income">
+            <h2 class="income_title">Incomes</h2>
+            <div id="incomes-list">
+<!--                 <div class="element clearStyles">
+                    <div class="element_description">Salary</div>
+                    <div class="right clearStyles">
+                        <div class="element_value">+ 2500</div>
+                        <div class="element_delete">
+                            <button class="element_delete--btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="element clearStyles">
+                    <div class="element_description">Classes</div>
+                    <div class="right clearStyles">
+                        <div class="element_value">+ 250</div>
+                        <div class="element_delete">
+                            <button class="element_delete--btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            -->
+
+            </div>
+        </div>
+    <div class="expense">
+        <h2 class="expense_title">Expenses</h2>
+        <div id="expenses-list">
+<!--             <div class="element clearStyles">
+                <div class="element_description">Home Rent</div>
+                <div class="right clearStyles">
+                    <div class="element_value">- 500</div>
+                    <div class="element_percentage">25%</div>
+                        <div class="element_delete">
+                            <button class="element_delete--btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="element clearStyles">
+                <div class="element_description">Supermarket</div>
+                <div class="right clearStyles">
+                    <div class="element_value">- 250</div>
+                    <div class="element_percentage">10%</div>
+                        <div class="element_delete">
+                            <button class="element_delete--btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                </div>
+            </div> 
+-->
+        </div>
+    </div>
+    </div>
+
+    <script src="js/Data.js"></script>
+    <script src="js/Income.js"></script>
+    <script src="js/Expense.js"></script>
+    <script src="js/app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
