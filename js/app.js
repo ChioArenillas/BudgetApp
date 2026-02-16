@@ -59,7 +59,8 @@ const createIncomesHTML = (income) => {
                     <div class="element_value">${currencyFormat(income.value)}</div>
                         <div class="element_delete">
                             <button class="element_delete--btn">
-                                <ion-icon name="close-outline"></ion-icon>
+                                <ion-icon name="close-circle-outline"
+                                onclick='deleteIncome(${income.id})'></ion-icon>
                             </button>
                         </div>
                     </div>
@@ -69,6 +70,13 @@ const createIncomesHTML = (income) => {
 
     `
     return incomeHTML
+}
+
+const deleteIncome = (id) => {
+    let indiceDelete = incomes.findIndex(income => income.id === id )
+    incomes.splice(indiceDelete, 1)
+    loadHeader()
+    loadIncomes()
 }
 
 const loadExpenses = () => {
@@ -88,7 +96,8 @@ const createExpenseHTML = (expense) => {
                     <div class="element_percentage">${percentageFormat(expense.value/totalExpenses())}</div>
                         <div class="element_delete">
                             <button class="element_delete--btn">
-                                <ion-icon name="close-outline"></ion-icon>
+                                <ion-icon name="close-circle-outline"
+                                onclick = deleteExpense(${expense.id})></ion-icon>
                             </button>
                         </div>
                     </div>
@@ -98,4 +107,13 @@ const createExpenseHTML = (expense) => {
     `
     return expenseHTML
 }
+
+const deleteExpense = (id) => {
+    let indiceDelete = expenses.findIndex(expense => expense.id === id)
+    expenses.splice(indiceDelete, 1)
+    loadHeader()
+    loadExpenses()
+}
+
+
 
