@@ -266,11 +266,12 @@ h2 {
     width: 100%;
 }
 .income {
-    margin-right: 0;
+    margin: 5px;
     width: 370px;
 }
 
 .expense {
+    margin: 5px;
     width: 370px;
 }
 
