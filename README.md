@@ -2,9 +2,9 @@
 
 ## 🧩 Description
 
-Budget App is a React-based web application that allows users to track their expenses and manage their budget in a simple and intuitive way.
+Budget App is a web application that allows users to track their expenses and manage their budget in a simple and intuitive way.
 
-Users can add expenses, monitor their spending, and see how much budget they have remaining in real time.
+Users can add expenses, monitor their spending, and see how much budget they have remaining in real time through dynamic updates in the interface.
 
 ## 🚀 Live Demo
 
@@ -12,9 +12,9 @@ https://budget-app-neon-two.vercel.app/
 
 ## 🚀 Technologies
 
-* React
+* HTML5
+* CSS3
 * JavaScript (ES6+)
-* CSS
 * Vercel (deployment)
 
 ## 🎯 Features
@@ -27,23 +27,18 @@ https://budget-app-neon-two.vercel.app/
 
 ## 🧠 Key Concepts
 
-* State management with React hooks
+* DOM manipulation with JavaScript
 * Handling user input and form logic
-* Derived state (budget, expenses, balance)
-* Conditional rendering
-* Component-based architecture
-
-## 💡 Purpose
-
-This project was built to practice building real-world applications that handle user data and update the UI dynamically based on user interactions.
+* Data management in the frontend
+* Dynamic UI updates
+* Separation of structure, style, and logic
 
 ## 📦 Installation
 
 ```bash
 git clone https://github.com/ChioArenillas/BudgetApp
 cd BudgetApp
-npm install
-npm run dev
+open index.html
 ```
 
 ## 📌 Project Status
